@@ -26,15 +26,17 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
+        working-directory: ./websites/qg-tech-consulting   # ← Important
         run: npm ci
 
       - name: Build with Astro
+        working-directory: ./websites/qg-tech-consulting   # ← Important
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './websites/qg-tech-consulting/dist'        # ← Important
 
   deploy:
     needs: build
