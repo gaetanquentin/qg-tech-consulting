@@ -1,18 +1,49 @@
 ---
 title: Accueil
-description: Documentation technique et blog personnel
-template: doc
+description: QG Tech Consulting - Documentation technique et expertise DevOps
+template: splash
+hero:
+  title: Gaétan QUENTIN
+  tagline: Consultant DevOps & Cloud | Documentation & Automatisation
+  image:
+    alt: Photo de Gaétan QUENTIN
+    file: ../../assets/photo.jpg
+  actions:
+    - text: Voir mes guides
+      link: /docs/
+      icon: right-arrow
+    - text: Me contacter
+      link: mailto:tonemail@exemple.com
+      variant: secondary
 ---
 
-# 👋 Bienvenue chez QG Tech Consulting
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-Bienvenue sur ma plateforme de documentation et de partage de connaissances.
+## Qui suis-je ?
 
-Je publie ici des guides techniques, des architectures, des runbooks et des retours d’expérience principalement autour du monde DevOps, Cloud et Infrastructure.
+Consultant spécialisé en **DevOps**, Cloud et automatisation.  
+Je crée et maintiens des documentations claires, des runbooks et des pipelines CI/CD robustes.
 
-## Sections disponibles
+<CardGrid>
+  <Card title="Documentation As Code" icon="document">
+    Guides techniques, architectures et procédures toujours à jour.
+  </Card>
+  <Card title="Automatisation" icon="rocket">
+    CI/CD, Infrastructure as Code, Kubernetes, Ansible...
+  </Card>
+  <Card title="Formation & Partage" icon="star">
+    Retours d'expérience et bonnes pratiques du terrain.
+  </Card>
+</CardGrid>
 
-- **Documentation** → Guides et procédures détaillées
-- **Blog** → Articles et réflexions
+## Mes domaines d'expertise
 
-Utilisez la barre de recherche (Ctrl + K) pour trouver rapidement ce dont vous avez besoin.
+- **DevOps & Plateformes** (GitLab CI, GitHub Actions, Jenkins)
+- **Cloud** (AWS, Azure, GCP)
+- **Conteneurs & Orchestration** (Docker, Kubernetes)
+- **IaC** (Terraform, Ansible, Pulumi)
+- **Observabilité** & Monitoring
+
+---
+
+**Besoin d'aide sur un projet ?** N’hésite pas à me contacter.

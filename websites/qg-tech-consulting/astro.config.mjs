@@ -19,10 +19,10 @@ export default defineConfig({
         },
       },
 
-//      logo: {
- //       src: './src/assets/logo.svg',
-//        alt: 'Mon Site Docs',
-//      },
+      logo: {
+        src: './src/assets/logo.svg',
+        alt: 'Mon Site Docs',
+      },
       favicon: '/favicon.svg',
 
       // === NOUVELLE SYNTAXE SOCIAL (obligatoire) ===
