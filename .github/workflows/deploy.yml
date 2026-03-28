@@ -24,19 +24,20 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
+          cache-dependency-path: ./websites/qg-tech-consulting/package-lock.json   # ← Correction ici
 
       - name: Install dependencies
-        working-directory: ./websites/qg-tech-consulting   # ← Important
+        working-directory: ./websites/qg-tech-consulting
         run: npm ci
 
       - name: Build with Astro
-        working-directory: ./websites/qg-tech-consulting   # ← Important
+        working-directory: ./websites/qg-tech-consulting
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './websites/qg-tech-consulting/dist'        # ← Important
+          path: './websites/qg-tech-consulting/dist'
 
   deploy:
     needs: build
